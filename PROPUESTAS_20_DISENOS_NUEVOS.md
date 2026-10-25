@@ -1,6 +1,6 @@
-# Familias nuevas 17–76 (implementadas)
+# Familias nuevas 17–96 (implementadas)
 
-**Estado:** las 60 familias están implementadas en `MusicOverlayStudio.html`: 17–36 son las 20 propuestas originales de este documento y 37–76 son 40 adicionales (lista al final). Las 76 tienen las 5 variantes y 0 fallos de contraste AA en las variantes sólidas.
+**Estado:** las 80 familias nuevas están implementadas en `MusicOverlayStudio.html`: 17–36 son las 20 propuestas originales de este documento y 37–76 son 40 adicionales y 77–96 son 20 de estilo macOS / iOS (listas al final). Las 96 tienen las 5 variantes y 0 fallos de contraste AA en las variantes sólidas.
 
 ## Las 20 propuestas originales (17–36)
 
@@ -88,3 +88,30 @@ Todas con silueta, material y movimiento distintos de las 16 familias y los 6 su
 | 74 | Vintage Microphone |
 | 75 | Matchbox |
 | 76 | Radar Sweep |
+
+## 20 familias estilo macOS / iOS (77–96)
+
+Interpretación propia (materiales translúcidos, tipografía de sistema, radios continuos); no usa logos, iconos ni marcas de terceros.
+
+| # | Nombre |
+|---|---|
+| 77 | Control Center Tile |
+| 78 | Lock Screen Player |
+| 79 | Notification Banner |
+| 80 | Mac Mini Player |
+| 81 | Watch Now Playing |
+| 82 | CarPlay Card |
+| 83 | Live Activity |
+| 84 | Liquid Glass Pill |
+| 85 | Menu Bar Popover |
+| 86 | Widget Pequeño |
+| 87 | Widget Mediano |
+| 88 | Widget Grande |
+| 89 | Focus Tile (TV) |
+| 90 | Orbe de Asistente |
+| 91 | Barra Táctil |
+| 92 | Ventana Espacial |
+| 93 | Hoja de Auriculares |
+| 94 | Altavoz Inteligente |
+| 95 | Cover Flow |
+| 96 | Vista Rápida |
