@@ -1,4 +1,8 @@
-# 20 familias nuevas propuestas (17–36)
+# Familias nuevas 17–76 (implementadas)
+
+**Estado:** las 60 familias están implementadas en `MusicOverlayStudio.html`: 17–36 son las 20 propuestas originales de este documento y 37–76 son 40 adicionales (lista al final). Las 76 tienen las 5 variantes y 0 fallos de contraste AA en las variantes sólidas.
+
+## Las 20 propuestas originales (17–36)
 
 Todas con silueta, material y movimiento distintos de las 16 familias y los 6 subestilos Watch actuales. Cada una hereda las 5 variantes (`white`, `black`, `transparent`, `glass`, `accent`), el contrato de datos y las reglas de contraste de la auditoría (mínimo 12 px, AA sobre fondo claro, oscuro y medio).
 
@@ -39,3 +43,48 @@ Todas con silueta, material y movimiento distintos de las 16 familias y los 6 su
 - Las familias 26 y 28 usan tipografía monoespaciada porque el recibo y la terminal son literalmente ese objeto; es la excepción justificada a la regla de no usar monoespaciada en datos pequeños.
 - Nunca se inventan colas, peticiones ni letras: 11, 33 y 36 se ocultan sin datos.
 - Ninguna usa confeti ni partículas continuas; 32 y 35 llevan un modo `motion=off` estático.
+
+## 40 familias adicionales (37–76)
+
+| # | Nombre |
+|---|---|
+| 37 | Equalizer Wall |
+| 38 | Classic MP3 Window |
+| 39 | Click Wheel Player |
+| 40 | Vending Machine |
+| 41 | Gramophone Horn |
+| 42 | Reel to Reel |
+| 43 | Minimal Line |
+| 44 | Newspaper Clipping |
+| 45 | Vintage Postcard |
+| 46 | Airport Board |
+| 47 | Film Strip |
+| 48 | Bento Grid |
+| 49 | Sticker Sheet |
+| 50 | Comic Panel |
+| 51 | Notebook Doodle |
+| 52 | Trading Card |
+| 53 | Lava Lamp |
+| 54 | Planet Orbit |
+| 55 | Sunrise Poster |
+| 56 | Retro OS Window |
+| 57 | Menu Bar Pill |
+| 58 | Dynamic Island |
+| 59 | Lock Screen Widget |
+| 60 | Car Gauge |
+| 61 | Transistor Radio |
+| 62 | Nixie Clock |
+| 63 | Flip Clock |
+| 64 | Subway Sign |
+| 65 | Road Sign |
+| 66 | Cinema Marquee |
+| 67 | Stage Spotlight |
+| 68 | Skateboard Deck |
+| 69 | Guitar Pick |
+| 70 | Piano Keys |
+| 71 | Metronome |
+| 72 | Speaker Tower |
+| 73 | Headphones Frame |
+| 74 | Vintage Microphone |
+| 75 | Matchbox |
+| 76 | Radar Sweep |
