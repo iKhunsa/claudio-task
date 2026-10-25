@@ -1034,18 +1034,6 @@ button{cursor:pointer}
 .f106 .ttl{font-size:17px}.f106 .art{font-size:14px}
 .f106 .p{position:absolute;left:120px;right:0;bottom:0;height:4px;border-radius:0}
 /*@@B5-css-end@@*/
-/*@@B6-css-start@@*/
-.fbar{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
-.fbar .fg{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-.fbar .lbl{font-size:12px;color:#a9acb8;margin-right:4px}
-.fbar select{background:#22242b;border:1px solid #4a4d58;border-radius:9px;padding:6px 8px;color:#eee;min-height:40px}
-.bdg{display:flex;gap:6px;flex-wrap:wrap}
-.cb{font-size:12px;font-weight:700;border-radius:20px;padding:2px 10px}
-.cb.ui{background:#153b2a;color:#9ff0c0}.cb.gfx{background:#3b2a52;color:#e0c9ff}
-.tg{font-size:12px;color:#b4b7c2;border:1px solid #4a4d58;border-radius:20px;padding:1px 8px}
-.gh{font-size:13px;font-weight:700;color:#b4b7c2;margin:14px 0 4px}.gh:first-of-type{margin-top:6px}
-.cnt{font-size:12px;color:#a9acb8;margin-left:auto}
-/*@@B6-css-end@@*/
 /*@@B7-css-start@@*/
 /* ===== 107–126 estilo Android / Material You (interpretación propia, sin marcas) ===== */
 .f107,.f108,.f109,.f110,.f111,.f112,.f113,.f114,.f115,.f116,.f117,.f118,.f119,.f120,.f121,.f122,.f123,.f124,.f125,.f126{font-family:Roboto,"Google Sans","Segoe UI",system-ui,sans-serif}
@@ -1207,6 +1195,18 @@ button{cursor:pointer}
 .f136 .dt{width:10px;height:10px;border-radius:50%;background:var(--acc);flex:none;box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 30%,transparent)}
 .f136 .ttl{font-size:15px;flex:1;min-width:0}.f136 .plat{font-size:13px;color:var(--fg2);flex:none}
 /*@@B8-css-end@@*/
+/*@@B6-css-start@@*/
+.fbar{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.fbar .fg{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.fbar .lbl{font-size:12px;color:#a9acb8;margin-right:4px}
+.fbar select{background:#22242b;border:1px solid #4a4d58;border-radius:9px;padding:6px 8px;color:#eee;min-height:40px}
+.bdg{display:flex;gap:6px;flex-wrap:wrap}
+.cb{font-size:12px;font-weight:700;border-radius:20px;padding:2px 10px}
+.cb.ui{background:#153b2a;color:#9ff0c0}.cb.gfx{background:#3b2a52;color:#e0c9ff}
+.tg{font-size:12px;color:#b4b7c2;border:1px solid #4a4d58;border-radius:20px;padding:1px 8px}
+.gh{font-size:13px;font-weight:700;color:#b4b7c2;margin:14px 0 4px}.gh:first-of-type{margin-top:6px}
+.cnt{font-size:12px;color:#a9acb8;margin-left:auto}
+/*@@B6-css-end@@*/
 /* ============ APP SHELL ============ */
 button{transition:transform 160ms var(--ease-out),background-color 160ms ease,border-color 160ms ease,color 160ms ease}
 button:active{transform:scale(.97)}
@@ -1669,24 +1669,6 @@ def('105',{name:'Widget de Barra de Juego',desc:'Widget flotante oscuro de super
 def('106',{name:'Notificación Windows',desc:'Notificación de bordes rectos con carátula al ras y línea de progreso inferior.',tech:'CSS',w:420,h:124,tone:'dark',ref:{panel:'rgba(43,43,43,.95)',panel2:'rgba(60,60,60,.9)',fg:'#fff',fg2:'#d4d4d4',acc:'#60cdff',blur:'24px',line:'rgba(255,255,255,.1)'},
  r:t=>`<div class="pn ts meta">${cov(t,'opt')}<div class="mt"><div class="lab"><span>Reproduciendo</span><span>${esc(SRC[t.source]||'')}</span></div>${ttl(t)}<div class="art">${esc(t.artist)}</div></div>${bar(t)}</div>`});
 /*@@B5-js-end@@*/
-/*@@B6-js-start@@*/
-const rg=(a,b)=>Array.from({length:b-a+1},(_,i)=>String(a+i).padStart(2,'0'));
-const CATS={ui:'UI/UX · limpio',gfx:'Gráficos · decorativo'};
-const UI_IDS=['01','02','03','06','07','11','12','14','15','16','34','43','48','57','58','59',...rg(77,89),'91','92','93','96','97','98','100','102','103','105','106',...rg(107,128),'130','131','132','134','135','136'];
-const TAGMAP={
- Apple:rg(77,96),Windows:rg(102,106),Linux:rg(97,101),
- Android:rg(107,126),Streaming:rg(127,136),
- Minimal:['12','43','57','58','77','80','83','84','91','102','103','11','110','116','118','119','127','135','136'],
- Cristal:['02','07','57','59','77','79','84','85','92','98','102','103','104','109','111'],
- Retro:['09','18','19','22','23','27','28','29','38','39','40','41','42','44','45','46','56','61','62','63','71','74','75','99'],
- Hardware:['04','08','09','18','20','21','22','23','27','29','39','40','41','42','53','61','62','63','70','71','72','74','94'],
- Ilustrado:['13','17','24','25','26','30','31','35','36','44','45','47','49','50','51','52','55','64','65','66','68','69','73','75'],
- 'Tipográfico':['19','31','43','46','66'],
- Visual:['32','54','76','90','101','60','37','33','10','05','112','120','122','129','133']
-};
-Object.keys(F).forEach(id=>{F[id].cat=UI_IDS.includes(id)?'ui':'gfx';F[id].tags=[]});
-Object.entries(TAGMAP).forEach(([t,ids])=>ids.forEach(id=>{if(F[id]&&!F[id].tags.includes(t))F[id].tags.push(t)}));
-/*@@B6-js-end@@*/
 /*@@B7-js-start@@*/
 const pc=(t,i)=>(t.pal&&t.pal[i])||['#7c5cff','#ff6fb5','#ffd27a'][i];
 const cvars=t=>`--c1:${pc(t,0)};--c2:${pc(t,1)};--c3:${pc(t,2)}`;
@@ -1757,6 +1739,24 @@ def('135',{name:'Mini con Línea Superior',desc:'Mini reproductor con la línea 
 def('136',{name:'Banner de Conexión',desc:'Banner delgado "Reproduciendo en…" con punto de acento y plataforma.',tech:'CSS',w:460,h:60,tone:'dark',ref:sp.dark,
  r:t=>`<div class="pn cn meta"><i class="dt"></i>${ttl(t)}${plat(t)}</div>`});
 /*@@B8-js-end@@*/
+/*@@B6-js-start@@*/
+const rg=(a,b)=>Array.from({length:b-a+1},(_,i)=>String(a+i).padStart(2,'0'));
+const CATS={ui:'UI/UX · limpio',gfx:'Gráficos · decorativo'};
+const UI_IDS=['01','02','03','06','07','11','12','14','15','16','34','43','48','57','58','59',...rg(77,89),'91','92','93','96','97','98','100','102','103','105','106',...rg(107,128),'130','131','132','134','135','136'];
+const TAGMAP={
+ Apple:rg(77,96),Windows:rg(102,106),Linux:rg(97,101),
+ Android:rg(107,126),Streaming:rg(127,136),
+ Minimal:['12','43','57','58','77','80','83','84','91','102','103','11','110','116','118','119','127','135','136'],
+ Cristal:['02','07','57','59','77','79','84','85','92','98','102','103','104','109','111'],
+ Retro:['09','18','19','22','23','27','28','29','38','39','40','41','42','44','45','46','56','61','62','63','71','74','75','99'],
+ Hardware:['04','08','09','18','20','21','22','23','27','29','39','40','41','42','53','61','62','63','70','71','72','74','94'],
+ Ilustrado:['13','17','24','25','26','30','31','35','36','44','45','47','49','50','51','52','55','64','65','66','68','69','73','75'],
+ 'Tipográfico':['19','31','43','46','66'],
+ Visual:['32','54','76','90','101','60','37','33','10','05','112','120','122','129','133']
+};
+Object.keys(F).forEach(id=>{F[id].cat=UI_IDS.includes(id)?'ui':'gfx';F[id].tags=[]});
+Object.entries(TAGMAP).forEach(([t,ids])=>ids.forEach(id=>{if(F[id]&&!F[id].tags.includes(t))F[id].tags.push(t)}));
+/*@@B6-js-end@@*/
 const IDS=Object.keys(F);
 const VARS=['white','black','transparent','glass','accent'];
 const VLBL={white:'White',black:'Black',transparent:'Transparent',glass:'Glass',accent:'Accent'};
@@ -1935,15 +1935,15 @@ function overlayMode(){
 }
 
 /* ---------- Filtros por categoría ---------- */
-const visible=id=>(S.cat==='all'||F[id].cat===S.cat)&&(S.tag==='all'||F[id].tags.includes(S.tag));
+const visible=id=>(S.cat==='all'||F[id].cat===S.cat)&&(S.tag==='all'||(F[id].tags||[]).includes(S.tag));
 function fbarHTML(compact){
   const n=c=>IDS.filter(id=>c==='all'||F[id].cat===c).length;
-  const tags=[...new Set(IDS.flatMap(id=>F[id].tags))];
+  const tags=[...new Set(IDS.flatMap(id=>F[id].tags||[]))];
   const cats=[['all','Todos'],['ui','UI/UX · limpio'],['gfx','Gráficos · decorativo']];
   return `<div class="fbar"><div class="fg" role="group" aria-label="Categoría">${compact?'':'<span class="lbl">Categoría:</span>'}${cats.map(([k,l])=>`<button class="chip ${S.cat===k?'on':''}" data-cat="${k}" aria-pressed="${S.cat===k}">${l} (${n(k)})</button>`).join('')}</div>
   <div class="fg" role="group" aria-label="Etiqueta">${compact?`<select data-tagsel aria-label="Etiqueta"><option value="all">Todas las etiquetas</option>${tags.map(t=>`<option value="${esc(t)}" ${S.tag===t?'selected':''}>${esc(t)}</option>`).join('')}</select>`:`<span class="lbl">Etiqueta:</span><button class="chip ${S.tag==='all'?'on':''}" data-tag="all" aria-pressed="${S.tag==='all'}">Todas</button>${tags.map(t=>`<button class="chip ${S.tag===t?'on':''}" data-tag="${esc(t)}" aria-pressed="${S.tag===t}">${esc(t)}</button>`).join('')}`}</div></div>`;
 }
-const badges=f=>`<div class="bdg"><span class="cb ${f.cat}">${CATS[f.cat]}</span>${f.tags.map(t=>`<span class="tg">${esc(t)}</span>`).join('')}</div>`;
+const badges=f=>`<div class="bdg"><span class="cb ${f.cat||'gfx'}">${CATS[f.cat||'gfx']}</span>${(f.tags||[]).map(t=>`<span class="tg">${esc(t)}</span>`).join('')}</div>`;
 
 /* ---------- GALERÍA ---------- */
 function gallery(host){
