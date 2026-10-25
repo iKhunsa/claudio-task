@@ -1,6 +1,6 @@
-# Familias nuevas 17–96 (implementadas)
+# Familias nuevas 17–106 (implementadas)
 
-**Estado:** las 80 familias nuevas están implementadas en `MusicOverlayStudio.html`: 17–36 son las 20 propuestas originales de este documento y 37–76 son 40 adicionales y 77–96 son 20 de estilo macOS / iOS (listas al final). Las 96 tienen las 5 variantes y 0 fallos de contraste AA en las variantes sólidas.
+**Estado:** las 90 familias nuevas están implementadas en `MusicOverlayStudio.html`: 17–36 son las 20 propuestas originales de este documento y 37–76 son 40 adicionales 77–96 son 20 de estilo macOS / iOS y 97–106 son 10 de estilo Linux (97–101) y Windows (102–106) (listas al final). Las 106 tienen las 5 variantes y 0 fallos de contraste AA en las variantes sólidas.
 
 ## Las 20 propuestas originales (17–36)
 
@@ -115,3 +115,31 @@ Interpretación propia (materiales translúcidos, tipografía de sistema, radios
 | 94 | Altavoz Inteligente |
 | 95 | Cover Flow |
 | 96 | Vista Rápida |
+
+## 10 familias estilo Linux y Windows (97–106)
+
+Interpretación propia, sin logos ni marcas: 97–101 Linux/escritorio y 102–106 Windows.
+
+| # | Nombre |
+|---|---|
+| 97 | Tarjeta GNOME |
+| 98 | Ajustes Rápidos |
+| 99 | Terminal Aubergine |
+| 100 | Applet Plasma |
+| 101 | Anillos de Escritorio |
+| 102 | Flyout Fluent |
+| 103 | Chip de Barra de Tareas |
+| 104 | Reproductor Aero |
+| 105 | Widget de Barra de Juego |
+| 106 | Notificación Windows |
+
+## Categorías y etiquetas
+
+Cada familia pertenece a una categoría y puede tener varias etiquetas. En la galería y en el editor hay filtros por ambas.
+
+| Categoría | Qué es | Cuántas |
+|---|---|---|
+| **UI/UX · limpio** | Interfaces funcionales de aspecto de producto: paneles planos, tipografía clara y poca decoración. Para quien quiere algo limpio. | 40 |
+| **Gráficos · decorativo** | Objetos, ilustraciones y estilos de imagen: hardware, retro, collage, papel, orbes. Más expresivos. | 66 |
+
+Etiquetas: Apple, Windows, Linux, Minimal, Cristal, Retro, Hardware, Ilustrado, Tipográfico y Visual. Los filtros se guardan en la URL (`&cat=ui&tag=Apple`).
